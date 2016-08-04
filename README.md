@@ -26,6 +26,16 @@ sys.path.append(0, os.path.abspath('.'))
 
 # References
 
-[Sphinx Extensions](http://www.sphinx-doc.org/en/stable/extensions.html#builtin-sphinx-extensions)
+- [Sphinx Extensions](http://www.sphinx-doc.org/en/stable/extensions.html#builtin-sphinx-extensions)
 
-[Tutorial: Writing a simple extension](http://www.sphinx-doc.org/en/stable/extdev/tutorial.html#the-setup-function)
+- [Tutorial: Writing a simple extension](http://www.sphinx-doc.org/en/stable/extdev/tutorial.html#the-setup-function)
+
+- [Sphinx.add_config_value(name, default, rebuild)](http://www.sphinx-doc.org/en/stable/extdev/appapi.html#sphinx.application.Sphinx.add_config_value)
+
+- [Sphinx.connect(event, callback)](http://www.sphinx-doc.org/en/stable/extdev/appapi.html#sphinx.application.Sphinx.connect)
+
+- [autodoc-process-docstring(app, what, name, obj, options, lines)](http://www.sphinx-doc.org/en/stable/ext/autodoc.html?highlight=autodoc-process-docstring#event-autodoc-process-docstring)
+
+- [source_encoding](http://www.sphinx-doc.org/en/stable/config.html)
+
+- [pypandoc](https://github.com/bebraw/pypandoc)
