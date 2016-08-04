@@ -5,7 +5,7 @@ import pypandoc
 
 
 def setup(app):
-    app.add_config_value('pandoc_use_parser', 'markdown', True)
+    app.add_config_value('mkdsupport_use_parser', 'markdown', True)
     app.connect('autodoc-process-docstring', pandoc_process)
 
 

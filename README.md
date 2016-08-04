@@ -10,7 +10,7 @@ This extension reads your docstrings in ```Markdown```, and translates it to ```
 
 # How to use it
 
-- Put this extension ```mkd2rst.py``` into the directory containing ```conf.py`` file which is also the root of your Sphinx project.
+- Put this extension ```mkdsupport.py``` into the directory containing ```conf.py`` file which is also the root of your Sphinx project.
 
 - Set module search path ```sys.path``` of Python so that Sphinx can find the extension. Add the following code to ```conf.py``` file:
 
@@ -22,8 +22,10 @@ sys.path.append(0, os.path.abspath('.'))
 
 **Note:** Actually you can put this extension to directory you want and put this directory to the ```sys.path```. However, the Sphinx project directory is suggested since the extension is not official. In this way, there is no pollution on Sphinx installation directory and it is easier to manage the settings.
 
-- Add ```mkd2rst``` to ```conf.py``` file so that this extension is enabled.
+- Add ```mkdsupport``` to ```conf.py``` file so that this extension is enabled.
 
 # References
 
 [Sphinx Extensions](http://www.sphinx-doc.org/en/stable/extensions.html#builtin-sphinx-extensions)
+
+[Tutorial: Writing a simple extension](http://www.sphinx-doc.org/en/stable/extdev/tutorial.html#the-setup-function)
