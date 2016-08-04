@@ -1,5 +1,5 @@
 ---
-SphinxMarkdownExtension
+Sphinx Markdown Extension
 ---
 
 An Sphinx extension supporting for sphinx.ext.autodoc with modules containing docstrings in Markdown.
@@ -20,9 +20,9 @@ import os
 sys.path.append(0, os.path.abspath('.'))
 ```
 
-**Note:** Actually you can put this extension to directory you want and put this directory to the ```sys.path```. However, the Sphinx project directory is suggested since the extension is not official. In this way, there is no pollution on Sphinx installation directory and it is easier to manage the settings.
-
 3. Add ```mkd2rst``` to ```conf.py``` file so that this extension is enabled.
+
+**Note:** Actually you can put this extension to directory you want and put this directory to the ```sys.path```. However, the Sphinx project directory is suggested since the extension is not official. In this way, there is no pollution on Sphinx installation directory and it is easier to manage the settings.
 
 # References
 
