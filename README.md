@@ -1,11 +1,29 @@
-Sphinx-Pandoc
-=============
+---
+SphinxMarkdownExtension
+---
 
-Convert docstrings from your markup of choice to ReStructuredText in Sphinx.
+An Sphinx extension supporting for sphinx.ext.autodoc with modules containing docstrings in Markdown.
 
-By default, this reads your docstrings in Markdown, and translates it to
-ReStructuredText so that Sphinx can deal with it. This hasn't been thoroughly
-tested yet, but as long as you aren't doing anything too complicated in your
-docstrings, you should be fine. This only does docstrings; it doesn't do
-anything to any other files Sphinx reads, so if you have an index.rst for
-example, that will still need to be in ReStructuredText.
+# How it works
+
+This extension reads your docstrings in ```Markdown```, and translates it to ```reStructuredText``` using ```pandoc```, so that Sphinx can deal with it. This only processes docstrings and it doesn't do anything to any other files which Sphinx reads. So, for example, if you have an ```index.rst```, that file still needs to be written in ReStructuredText.
+
+# How to use it
+
+1. Put this extension ```mkd2rst.py``` into the directory containing ```conf.py`` file which is also the root of your Sphinx project.
+
+2. Set module search path ```sys.path``` of Python so that Sphinx can find the extension. Add the following code to ```conf.py``` file:
+
+```python
+import sys
+import os
+sys.path.append(0, os.path.abspath('.'))
+```
+
+**Note:** Actually you can put this extension to directory you want and put this directory to the ```sys.path```. However, the Sphinx project directory is suggested since the extension is not official. In this way, there is no pollution on Sphinx installation directory and it is easier to manage the settings.
+
+3. Add ```mkd2rst``` to ```conf.py``` file so that this extension is enabled.
+
+# References
+
+[Sphinx Extensions](http://www.sphinx-doc.org/en/stable/extensions.html#builtin-sphinx-extensions)
