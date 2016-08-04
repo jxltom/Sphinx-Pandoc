@@ -10,19 +10,28 @@ This extension reads your docstrings in ```Markdown```, and translates it to ```
 
 # How to use it
 
-- Put this extension ```mkdsupport.py``` into the directory containing ```conf.py`` file which is also the root of your Sphinx project.
+## Requirements
 
-- Set module search path ```sys.path``` of Python so that Sphinx can find the extension. Add the following code to ```conf.py``` file:
+* Python 3.4 or 3.5 since ```pypandoc``` only supports Python 2.7, 3.4 and 3.5.
+
+* pypandoc (install it by ```pip install pypandoc``` in CMD)
+
+## Usage
+
+Put this extension ```mkdsupport.py``` into the directory containing ```conf.py``` file which is also the root of your Sphinx project.
+
+Set module search path ```sys.path``` of Python so that Sphinx can find the extension. Add the following code to ```conf.py``` file:
 
 ```python
 import sys
 import os
+
 sys.path.append(0, os.path.abspath('.'))
 ```
 
 **Note:** Actually you can put this extension to directory you want and put this directory to the ```sys.path```. However, the Sphinx project directory is suggested since the extension is not official. In this way, there is no pollution on Sphinx installation directory and it is easier to manage the settings.
 
-- Add ```mkdsupport``` to ```conf.py``` file so that this extension is enabled.
+Add ```mkdsupport``` to ```conf.py``` file so that this extension is enabled.
 
 # References
 
