@@ -13,7 +13,6 @@ This extension reads your docstrings in ```Markdown```, and translates it to ```
 1. Put this extension ```mkd2rst.py``` into the directory containing ```conf.py`` file which is also the root of your Sphinx project.
 
 2. Set module search path ```sys.path``` of Python so that Sphinx can find the extension. Add the following code to ```conf.py``` file:
-
 ```python
 import sys
 import os
