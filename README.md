@@ -18,6 +18,8 @@ This extension reads your docstrings in ```Markdown```, and translates it to ```
 
 ## Usage
 
+The default input format is GitHub-Flavored Markdown and you can change it to other format as long as [Pandoc](http://pandoc.org/MANUAL.html) can support. For this, you need to change the ```mkdsupport_use_parser``` from ```markdown_github``` to the format you want in the extension source file ```mkdsupport.py```.
+
 Put this extension ```mkdsupport.py``` into the directory containing ```conf.py``` file which is also the root of your Sphinx project.
 
 Add the following code to ```conf.py``` file to set module search path ```sys.path``` of Python so that Sphinx can find the extension. 
@@ -29,17 +31,17 @@ import os
 sys.path.append(0, os.path.abspath('.'))
 ```
 
-**Note:** Actually you can put this extension to directory you want and put this directory to the ```sys.path```. However, the Sphinx project directory is suggested since the extension is not official. In this way, there is no pollution on Sphinx installation directory and it is easier to manage the settings.
-
 Add ```mkdsupport``` to ```conf.py``` file so that this extension is enabled as following.
 
 ```python
 extensions = ['mkdsupport']
 ```
 
-# Bugs
+# Reminder
 
-- There is no updating for html if the docstrings are not changed.
+- Actually you can put this extension to directory you want and put this directory to the ```sys.path```. However, the Sphinx project directory is suggested since the extension is not official. In this way, there is no pollution on Sphinx installation directory and it is easier for managing the settings.
+
+- If you change the input format, such as the default one ```markdown_github```, in this extension and there are no changes in your project source files, this extension will not be triggered and there are no updating in your generated documentation.
 
 # References
 
