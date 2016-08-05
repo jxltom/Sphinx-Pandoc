@@ -43,7 +43,7 @@ extensions = ['mkdsupport']
 
 - If you change the input format, such as the default one ```markdown_github```, in this extension and there are no changes in your project source files, this extension will not be triggered and there will be no updates in your generated documentation.
 
-# References
+# References for Developers
 
 - [Sphinx Extensions](http://www.sphinx-doc.org/en/stable/extensions.html#builtin-sphinx-extensions)
 
