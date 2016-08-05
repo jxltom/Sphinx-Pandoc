@@ -14,7 +14,7 @@ This extension reads your docstrings in ```Markdown```, and translates it to ```
 
 * Python 3.4 or 3.5 since ```pypandoc``` only supports Python 2.7, 3.4 and 3.5.
 
-* pypandoc (install it by ```pip install pypandoc``` in CMD)
+* pypandoc (install it by ```pip install pypandoc``` in ```cmd```)
 
 ## Usage
 
@@ -36,6 +36,10 @@ Add ```mkdsupport``` to ```conf.py``` file so that this extension is enabled as 
 ```python
 extensions = ['mkdsupport']
 ```
+
+# Bugs
+
+- There is no updating for html if the docstrings are not changed.
 
 # References
 
